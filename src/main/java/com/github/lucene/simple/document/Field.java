@@ -1,6 +1,9 @@
 package com.github.lucene.simple.document;
 
-public class Field {
+import java.io.Serializable;
+
+public class Field implements Serializable {
+    private static final long serialVersionUID = 1L;
     private final String name;
     private final String value;
     private final FieldType fieldType;

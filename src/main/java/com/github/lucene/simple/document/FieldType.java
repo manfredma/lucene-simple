@@ -1,6 +1,9 @@
 package com.github.lucene.simple.document;
 
-public final class FieldType {
+import java.io.Serializable;
+
+public final class FieldType implements Serializable {
+    private static final long serialVersionUID = 1L;
 
     public static final FieldType TEXT_INDEXED_STORED = new FieldType(true, true, true);
     public static final FieldType TEXT_INDEXED_NOT_STORED = new FieldType(true, false, true);
